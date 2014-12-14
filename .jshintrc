@@ -1,5 +1,6 @@
 {
-  "strict" : true,
+  "globalstrict" : true,
+
   "indent" : 2,
   "maxlen" : 80,
   "unused" : true,
@@ -9,10 +10,6 @@
   "dojo"    : true,
   "devel"   : true,
   "debug"   : true,
-  "globals": {
-    "_": false,
-    "Backbone": false,
-    "$": false,
-    "jQuery": false
-  }
+  
+  "jquery" : true
 }

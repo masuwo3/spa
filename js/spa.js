@@ -1,8 +1,7 @@
-/* global spa: true */
+'use strict';
 
+/* exported spa */
 var spa = (function () {
-  "use strict";
-
   var initModule = function($container){
     $container.html(
       '<h1 stype="display:inline-block; margin:25px;">' +
