@@ -3,13 +3,13 @@
 
   "indent" : 2,
   "maxlen" : 80,
-  "unused" : true,
+  "unused" : "vars",
 
   "undef"   : true,
   "browser" : true,
   "dojo"    : true,
   "devel"   : true,
   "debug"   : true,
-  
+
   "jquery" : true
 }
