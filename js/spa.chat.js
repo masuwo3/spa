@@ -33,7 +33,7 @@ spa.chat = (function(){
 
       chat_model      : true,
       people_model    : true,
-      set_chat_auchor : true
+      set_chat_anchor : true
     },
 
     slider_open_time    : 250,
