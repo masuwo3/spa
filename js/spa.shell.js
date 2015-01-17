@@ -158,7 +158,7 @@ spa.shell = (function(){
   };
 
   onTapAcct = function(event){
-    var acct_text, user_name, user = spa.model.people.get_user();
+    var user_name, user = spa.model.people.get_user();
 
     if( user.get_is_anon() ){
       user_name = prompt('Please sign-in');
