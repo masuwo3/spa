@@ -164,9 +164,9 @@ spa.model = (function(){
           }
 
           make_person_map = {
-            cid     : person_map.id,
+            cid     : person_map._id,
             css_map : person_map.css_map,
-            id      : person_map.id,
+            id      : person_map._id,
             name    : person_map.name
           };
 
