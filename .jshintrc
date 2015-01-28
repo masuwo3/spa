@@ -11,5 +11,6 @@
   "devel"   : true,
   "debug"   : true,
 
-  "jquery" : true
+  "jquery" : true,
+  "node" : true
 }

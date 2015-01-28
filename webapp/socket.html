@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" id="script_a" src="/js/data.js"></script>
+    <script type="text/javascript">
+      /* global io, b*/
+      'use strict';
+      $(function(){
+        $('body').html(b);
+      });
+      io.connect('http://localhost').on('script', function(path){
+        $('#script_a').remove();
+        var script = document.createElement('script');
+        script.setAttribute('id', 'script_a');
+        script.setAttribute('src', path + '?v=' + parseInt((new Date())/1000));
+
+        $('head').append($(script));
+
+        $('body').html(b);
+      });
+    </script>
+    <title>socket.html</title>
+  </head>
+  <body>
+    Loading...
+  </body>
+</html>
